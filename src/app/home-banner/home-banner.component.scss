@@ -1,26 +1,19 @@
-.banner{
-    width: 29px;
-    height: 14px;
-    border-top: 18px solid transparent;
-    border-right: 128px solid #dedede;
-    border-bottom: 20px solid transparent;
-}
 
-.banner-img{
-    position: relative;
-    bottom: 13px;
-}
 
 body, html {
   height: 100%;
+
+ 
+
+
 }
 
 body {
   padding: 0;
-  background-color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 
@@ -49,17 +42,17 @@ nav {
   position:fixed; 
   height:100vh; 
   width:$nav-width-collapsed; 
-  background:#555; 
+  background:transparent; 
   overflow:hidden;
   transition: width .3s ease;
   &:hover, &.pinned { 
     width:$nav-width-open;
   }
   #logo {
-    background:#dfdcda;
+    background:transparent;
     height:$nav-width-collapsed;
     line-height:$nav-width-collapsed;
-    padding-left:.7rem;
+    padding-left: .0rem;
   }
   a { 
     color:#EEE; 
@@ -67,15 +60,9 @@ nav {
     display:table; 
     //padding:.8rem 0;
     width:$nav-width-open;
-    &.active {
-      .fa{
-        border-left:3px solid rgb(175, 164, 156);
-        border-right:3px solid transparent;
-      }
-    }
     &:hover { 
       background:#444; 
-      color:#BEE0ff;
+      color:rgb(238, 240, 241);
     }
     & .fa { 
       width:$nav-width-collapsed;
@@ -94,4 +81,11 @@ section {
   padding: 2rem 5rem 2rem $nav-width-collapsed+5;
   min-height:100vh;
   h1 { font-family:Raleway, Roboto, sans-serif; font-size:2.2rem; }
+}
+
+
+.text{
+  margin: 2%;
+  position: relative;
+  top: 107px;
 }
